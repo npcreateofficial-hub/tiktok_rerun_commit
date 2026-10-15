@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <style>
+    :root{--np-line:rgba(126,164,218,.24)}
+    body{margin:0;background:#050b14;color:#fff;font-family:Arial,sans-serif}
+    .app-shell{display:grid;grid-template-columns:200px 1fr;min-height:100vh}
+    .sidebar{background:#07121f;padding:20px 12px}
+    .sidebar button{display:block;width:100%;margin:8px 0;padding:12px;border:1px solid #21466e;background:#071625;color:#fff;border-radius:10px}
+    .sidebar button.active{background:#1478ef}
+    .main-area{padding:30px}
+    .settings-page{max-width:1660px}
+    .page-intro{padding:20px 0;border-bottom:1px solid #22324a}
+    .page-intro h1{margin:0 0 4px;font-size:26px}
+    .primary-button{background:#2388ff;color:#fff;border:0;border-radius:10px;padding:10px 18px}
+    .placeholder-page{padding:80px;text-align:center;color:#aebdd3}
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <nav>
+        <button><span>แดชบอร์ด</span></button>
+        <button><span>บัญชีไลฟ์</span></button>
+        <button class="active"><span>คลังวิดีโอ</span></button>
+      </nav>
+    </aside>
+    <main class="main-area">
+      <section class="settings-page library-page">
+        <section class="page-intro library-hero">
+          <div>
+            <p class="eyebrow">แหล่งวิดีโอ</p>
+            <h1>คลังวิดีโอ</h1>
+            <p>วิดีโอที่เคยเลือกจะถูกนำไว้ที่นี่ เพื่อหยิบกลับมาใช้ได้เร็วขึ้น</p>
+          </div>
+          <button class="primary-button" type="button">+ เพิ่มวิดีโอ</button>
+        </section>
+        <div class="placeholder-page inline">ยังไม่มีวิดีโอในคลัง</div>
+      </section>
+    </main>
+  </div>
+  <script>
+    localStorage.setItem('np.active.username', 'test01');
+    localStorage.setItem('np.pendingLibraryUploads', JSON.stringify([{
+      uploadToken: 'old-stuck-upload',
+      name: 'รีรันจงเจริญ7.mp4',
+      size: 221954469,
+      progress: 30,
+      updatedAt: Date.now() - 60 * 60 * 1000
+    }]));
+    window.fetch = async (url) => ({
+      ok: true,
+      status: 200,
+      json: async () => ({
+        currentPackage: { name: 'NP-PRO', videoLimit: 3, clipSizeGb: 2, durationDays: 30 }
+      })
+    });
+    window.__removedIds = [];
+    window.rerun = {
+      listLibrary: async () => ([
+        {
+          id: 'video-0922',
+          name: '0922',
+          size: 385491872,
+          addedAt: new Date('2026-10-08T17:03:12+07:00').getTime(),
+          mediaUrl: 'data:video/mp4;base64,'
+        },
+        {
+          id: 'video-rerun',
+          name: 'รีรันจงเจริญ7',
+          size: 221954469,
+          addedAt: new Date('2026-10-09T09:31:03+07:00').getTime(),
+          mediaUrl: 'data:video/mp4;base64,'
+        }
+      ]),
+      removeLibrary: async (id) => {
+        window.__removedIds.push(id);
+        return window.rerun.listLibrary();
+      },
+      getLicenseStatus: async () => ({ username: 'test01' })
+    };
+  </script>
+</body>
+</html>

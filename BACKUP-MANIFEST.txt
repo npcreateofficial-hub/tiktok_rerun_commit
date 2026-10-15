@@ -1,0 +1,5 @@
+﻿Digital NP Studio backup
+Created: 2026-10-15
+Included: source code, runtime app files, scripts, tests, documentation, screenshots and non-secret configuration examples.
+Excluded: video/media files; data/ (uploads, profiles, sessions, databases, logs and access secrets); node_modules; .git and Codex work folders; tools.zip and other archives; deploy.rerun_tiktok.env and secret/token/password/database/log files.
+Note: production/customer data is intentionally excluded.

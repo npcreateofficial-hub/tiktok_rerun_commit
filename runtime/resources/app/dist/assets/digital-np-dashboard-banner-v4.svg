@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="122" viewBox="0 0 1560 122" role="img" aria-label="Digital NP Studio premium live dashboard banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06111f"/>
+      <stop offset="0.46" stop-color="#071827"/>
+      <stop offset="1" stop-color="#0a3d44"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1a8cff"/>
+      <stop offset="1" stop-color="#38d7ff"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffc83d"/>
+      <stop offset="1" stop-color="#ff9b18"/>
+    </linearGradient>
+    <radialGradient id="leftGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 48) scale(280 92)">
+      <stop offset="0" stop-color="#1d8dff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#1d8dff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1330 62) scale(340 96)">
+      <stop offset="0" stop-color="#ffc21b" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#ffc21b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-40%" y="-80%" width="180%" height="260%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.38"/>
+    </filter>
+    <filter id="glow" x="-40%" y="-120%" width="180%" height="340%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#1598ff" flood-opacity="0.34"/>
+    </filter>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0V38" fill="none" stroke="#9ed7ff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1560" height="122" rx="16" fill="url(#bg)"/>
+  <rect width="1560" height="122" rx="16" fill="url(#grid)"/>
+  <rect width="1560" height="122" rx="16" fill="url(#leftGlow)"/>
+  <rect width="1560" height="122" rx="16" fill="url(#rightGlow)"/>
+  <path d="M0 94 C210 74 330 99 520 70 C720 39 906 41 1102 70 C1278 96 1420 84 1560 50 L1560 122 L0 122 Z" fill="#0c3552" opacity="0.22"/>
+  <path d="M778 91 C898 51 1056 45 1210 69 C1340 89 1438 78 1560 51" fill="none" stroke="url(#blue)" stroke-width="2" stroke-linecap="round" opacity="0.42"/>
+  <path d="M1006 22 C1128 31 1206 60 1328 58 C1412 56 1486 36 1560 28" fill="none" stroke="url(#gold)" stroke-width="2.4" stroke-linecap="round" opacity="0.72"/>
+  <g transform="translate(46 23)" filter="url(#shadow)">
+    <rect width="76" height="76" rx="21" fill="#081421" stroke="#2b75bd" stroke-opacity="0.55"/>
+    <image x="12" y="12" width="52" height="52" href="./logo-DpwLmXN6.png" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g transform="translate(146 27)" filter="url(#glow)">
+    <text x="0" y="26" fill="#ffffff" font-family="Arial, Tahoma, sans-serif" font-size="29" font-weight="900" letter-spacing="0">Digital NP Studio</text>
+    <text x="1" y="55" fill="#a8c7e8" font-family="Arial, Tahoma, sans-serif" font-size="16" font-weight="600">ระบบจัดการไลฟ์และวิดีโอสำหรับทีมขาย TikTok</text>
+    <rect x="2" y="68" width="152" height="4" rx="2" fill="url(#gold)" opacity="0.95"/>
+    <rect x="166" y="68" width="58" height="4" rx="2" fill="url(#blue)" opacity="0.75"/>
+  </g>
+  <g transform="translate(694 32)">
+    <rect x="0" y="0" width="92" height="44" rx="22" fill="#071421" stroke="#1f8eff" stroke-opacity="0.38"/>
+    <circle cx="23" cy="22" r="6" fill="#1d9bff"/>
+    <text x="42" y="27" fill="#e6f4ff" font-family="Arial, Tahoma, sans-serif" font-size="14" font-weight="800">LIVE</text>
+    <rect x="108" y="0" width="116" height="44" rx="22" fill="#071421" stroke="#1fd384" stroke-opacity="0.34"/>
+    <circle cx="131" cy="22" r="6" fill="#22c55e"/>
+    <text x="150" y="27" fill="#eafff4" font-family="Arial, Tahoma, sans-serif" font-size="14" font-weight="800">READY</text>
+    <rect x="240" y="0" width="128" height="44" rx="22" fill="#071421" stroke="#ffc21b" stroke-opacity="0.36"/>
+    <circle cx="263" cy="22" r="6" fill="#ffc21b"/>
+    <text x="282" y="27" fill="#fff1bf" font-family="Arial, Tahoma, sans-serif" font-size="14" font-weight="800">PRO MODE</text>
+  </g>
+  <g transform="translate(1132 20)" filter="url(#shadow)">
+    <rect width="220" height="82" rx="24" fill="#071421" stroke="#316795" stroke-opacity="0.46"/>
+    <text x="24" y="29" fill="#86c7ff" font-family="Arial, Tahoma, sans-serif" font-size="13" font-weight="800">CONTROL CENTER</text>
+    <text x="24" y="57" fill="#ffffff" font-family="Arial, Tahoma, sans-serif" font-size="23" font-weight="900">Live Commerce</text>
+    <rect x="170" y="23" width="24" height="36" rx="5" fill="url(#blue)" opacity="0.9"/>
+    <circle cx="182" cy="68" r="3" fill="#7dd3fc"/>
+  </g>
+  <g transform="translate(1382 34)" filter="url(#shadow)">
+    <rect width="132" height="54" rx="27" fill="url(#gold)"/>
+    <text x="66" y="23" text-anchor="middle" fill="#06111f" font-family="Arial, Tahoma, sans-serif" font-size="14" font-weight="900">พร้อมขาย</text>
+    <text x="66" y="40" text-anchor="middle" fill="#06111f" font-family="Arial, Tahoma, sans-serif" font-size="12" font-weight="800" opacity="0.84">เริ่มไลฟ์ได้ทันที</text>
+  </g>
+</svg>

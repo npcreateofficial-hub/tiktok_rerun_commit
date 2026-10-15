@@ -1,0 +1,56 @@
+# Runtime/user data
+data/
+*.log
+*.secret
+*.sqlite
+*.sqlite-*
+
+# Uploaded media and local recordings
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.flv
+*.m4v
+*.ts
+
+# Dependencies and generated caches
+node_modules/
+runtime/resources/app/node_modules/
+.cache/
+.tmp/
+tmp/
+
+# Local browser/profile/session data
+profile/
+Default/
+Cache/
+Code Cache/
+GPUCache/
+ShaderCache/
+GrShaderCache/
+
+# Large packaged/runtime binaries and inspection output
+tools.zip
+*.zip
+*.7z
+*.rar
+*.asar
+*.exe
+.codex/
+.codex-tools-inspect/
+rerun-exe-inspect/
+
+# Captured third-party/API payload dumps
+tools/*.json
+
+# Local secrets/config overrides
+.env
+.env.*
+!.env.example
+*.local
+
+# OS/editor noise
+Thumbs.db
+.DS_Store
